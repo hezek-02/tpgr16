@@ -1,0 +1,87 @@
+@charset "UTF-8";
+body{
+	background-color:#e7e7e7;
+}
+
+*{
+	user-select: none; 
+}
+/*navbar*/
+
+.nav-item1{
+    margin-right: 10px; /*pequeño margen entre login e sing-up*/
+}
+
+.nav-item1 i {
+    margin-left: 5px; /*pequeño margen entre iconos login e sing-up*/
+}
+
+
+.nav-item1 .nav-link1 {
+	text-decoration: none;
+    color: rgb(98, 160, 234) !important;
+    transition: all 0.3s; /* Transición suave para el hover */
+}
+
+.nav-item1 .nav-link1:hover {
+	text-decoration: none;
+    color: rgb(148, 116, 232) !important; /* Cambia el color al hacer hover */
+    text-shadow: 1px 1px 1px rgb(86, 56, 183) !important; /* Cambia el sombreado al hacer hover */
+}
+
+.navbar {
+    background-image: linear-gradient(to right,#eee9f0,#c0ccd4,#eee9f0); /* gradiente*/ 
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+	font-size: 25px;
+	font-style: italic;
+	text-shadow: 1px 1px 3px #a6b6f3; 
+    transition: all 0.3s; /* Transición suave para el hover */
+
+}
+
+.logo:hover {
+	text-shadow: 2px 2px 1px #a6b6f3; /* Sombreado */
+}
+
+
+/*img perfil*/
+.perfil-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.nav-item .nav-link{
+    color: rgb(255, 255, 255) !important;
+    margin: auto;
+    transition: all 0.3s; /* Transición suave para el hover */
+}
+
+.nav-item .nav-link:hover{
+    color: rgb(222, 221, 218) !important;
+    text-shadow: 1px 1px 2px rgb(86, 56, 183) !important; /* Cambia el sombreado al hacer hover */
+}
+
+/*generic templates*/
+
+.generic-box{
+	border: 2px;
+	border-radius: 5px;
+}
+
+.generic-card-environment{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-bottom:  10px;
+}
+
+@media (min-width: 600px) {
+	.generic-card-environment{
+		max-width: 500px;
+	}
+}

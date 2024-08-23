@@ -1,0 +1,56 @@
+@charset "ISO-8859-1";
+
+/* General Styles */
+.menu-options-container {
+	background-color: #ffffff;
+	padding: 10px 10px 20px 10px;
+	border-right: 1px solid #e0e0e0;
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+	margin: 30px;
+}
+
+.menu-options h2.keyWords {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+/* List Group Styles */
+.list-group {
+    margin-bottom: 15px;
+}
+
+.list-group-item {
+    color: #333;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Prevents text wrapping inside each menu item */
+}
+
+.list-group-item:hover {
+    background-color: #e0e0e0;
+    text-decoration: none;
+}
+
+/* Icons & Text Styles */
+.list-group-item i {
+    margin-right: 10px;
+}
+
+.list-group-item b {
+    font-weight: 600;
+}
+
+/* Keywords Styles */
+.form-check {
+    margin-bottom: 8px; /* Increase margin for more spacing between keywords */
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+

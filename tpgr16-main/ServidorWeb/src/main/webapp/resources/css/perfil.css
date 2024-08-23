@@ -1,0 +1,31 @@
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.container-perfil{
+    margin-top:  45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    padding : 20px;
+    gap: 15px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.generic-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:  45px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.follow-btn {
+	border-radius: 1.5rem !important;
+}

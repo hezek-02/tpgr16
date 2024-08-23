@@ -1,0 +1,137 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ServidorCentral</groupId>
+  <artifactId>ServidorCentral</artifactId>
+  <version>1</version>
+  <name>ServidorCentral</name>
+  <description>Servidor central </description>
+  <build>
+	  
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+      
+     <resource>
+        <directory>media</directory>
+        <filtering>true</filtering>
+    </resource>
+    
+    <resource>
+        <directory>media</directory>
+            <targetPath>${project.build.directory}/media</targetPath>    
+    </resource>
+    
+    <resource>
+        <directory>lib</directory>
+            <targetPath>${project.build.directory}/lib</targetPath>    
+    </resource>
+    
+    <resource>
+        <directory>src</directory>
+        <includes>
+            <include>META-INF/**</include>
+        </includes>
+    </resource>
+    
+    </resources>
+
+    <plugins>
+		
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>17</release>
+			      <excludes>
+                <exclude>**/test/**</exclude>
+            </excludes>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>2.22.0</version> 
+      <configuration>
+        <skipTests>true</skipTests>
+      </configuration>
+    </plugin>
+
+      <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-assembly-plugin</artifactId>
+		<version>3.6.0</version>
+		<configuration>
+		<descriptorRefs>
+			<descriptorRef>jar-with-dependencies</descriptorRef>
+		</descriptorRefs>
+			<archive>
+				<manifest>
+					<mainClass>presentacion.Principal</mainClass>
+				</manifest>
+			</archive>
+		</configuration>
+			<executions>
+				<execution>
+				<id>assemble-all</id>
+				<phase>package</phase>
+					<goals>
+						<goal>single</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+		
+    </plugins>
+    
+  </build>
+  
+  <dependencies>
+	  
+	<dependency>
+	    <groupId>jakarta.xml.ws</groupId>
+	    <artifactId>jakarta.xml.ws-api</artifactId>
+	    <version>4.0.0</version>
+	</dependency>
+	
+	<dependency>
+  		<groupId>com.sun.xml.ws</groupId>
+  		<artifactId>jaxws-rt</artifactId>
+  		<version>4.0.0</version>
+  	</dependency>
+	
+	<dependency>
+	    <groupId>org.eclipse.persistence</groupId>
+	    <artifactId>eclipselink</artifactId>
+	    <version>4.0.2</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.hsqldb</groupId>
+	    <artifactId>hsqldb</artifactId>
+	    <version>2.7.1</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.toedter</groupId>
+	    <artifactId>jcalendar</artifactId>
+	    <version>1.4</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.junit.jupiter</groupId>
+	    <artifactId>junit-jupiter-api</artifactId>
+	    <version>5.10.0</version>
+	    <scope>test</scope>
+	</dependency>
+
+  </dependencies>
+  
+</project>

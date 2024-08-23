@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>DispositivoMovil</groupId>
+  <artifactId>DispositivoMovil</artifactId>
+  <version>1</version>
+  <packaging>war</packaging>
+  <name>DispositivoMovil</name>
+  <description>Dispositivo móvil</description>
+ <build>
+	    <sourceDirectory>src/main/java</sourceDirectory>
+	    <plugins>
+	      <plugin>
+	        <artifactId>maven-compiler-plugin</artifactId>
+	        <version>3.8.1</version>
+	        <configuration>
+	          <release>17</release>
+			  <encoding>UTF-8</encoding>
+	        </configuration>
+	      </plugin>
+	      
+	      <plugin>
+	        <artifactId>maven-war-plugin</artifactId>
+	        <version>3.2.3</version>
+	        <configuration>
+				<warSourceDirectory>src/main/webapp</warSourceDirectory>
+	        </configuration>
+	      </plugin>
+	      
+	    </plugins>
+	  </build>
+  
+  <dependencies>
+	   
+	<dependency>
+	    <groupId>jakarta.xml.ws</groupId>
+	    <artifactId>jakarta.xml.ws-api</artifactId>
+	    <version>4.0.0</version>
+	</dependency>
+	
+	<dependency>
+  		<groupId>com.sun.xml.ws</groupId>
+  		<artifactId>jaxws-rt</artifactId>
+  		<version>4.0.0</version>
+  	</dependency>
+  	
+  	<dependency>
+		<groupId>org.apache.tomcat</groupId>
+		<artifactId>tomcat-servlet-api</artifactId>
+		<version>10.1.15</version>
+	</dependency>
+	
+  </dependencies>
+</project>

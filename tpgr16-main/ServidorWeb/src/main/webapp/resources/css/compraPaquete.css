@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+html, body {
+    height: 100%;
+}
+
+.page{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.main-container2{
+    display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	padding: 25px;
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
+/*	background: rgb(128, 255, 128);*/
+	background: #ffffffcf;
+  	border-radius: 10px 10px;
+  	flex: 1 0 auto;
+}
+
+.productos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row;
+    border-radius: 10px 10px; */
+    padding-top: 45px;
+    
+}
+
+.item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px 10px; 
+    margin: 15px;
+    width: 200px; /* por ejemplo, establece un ancho fijo */
+    height: 350px; /* por ejemplo, establece un alto fijo */
+    box-sizing: border-box; /* asegura que el padding y border no aumenten el tamaño del elemento */
+    overflow: hidden; /* si el contenido interno es muy grande, esto lo ocultará */
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    
+}
+
+.imagen{
+    margin-top: 30px ;
+	align-items: flex-start;
+	max-width: 70px;
+    height: 70px; /* establece una altura fija para las imágenes */
+    object-fit: contain; /* asegura que las imágenes se redimensionen proporcionalmente */
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 20px 15px;
+    flex-direction: column;
+}
+
+.botones{
+	display: flex;
+	gap:10px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}

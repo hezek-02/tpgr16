@@ -1,0 +1,23 @@
+.generic-section-tipos {
+	margin: 30px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	color: #999;
+	flex-grow: 1;
+	background: #ffffffcf;
+  	border-radius: 10px 10px;
+}
+
+.nombres {
+	color: #333;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.tipos-publicacion {
+	display: flex;
+	flex-direction: column;	
+}

@@ -1,0 +1,12 @@
+body {
+    background-color: #a6b6f3;
+}
+
+.login-button, .login-button:active {
+    background-color: #5360ff !important;
+}
+
+.login-button:hover {
+    background-color: #2c30a3 !important;
+}
+

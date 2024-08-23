@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence version="3.0"
+    xmlns="https://jakarta.ee/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence 
+        https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+    <persistence-unit name="Servidor" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>persistence.OfertaLabJPA</class>
+        <class>persistence.PostulacionJPA</class>
+        <class>persistence.PostulacionPK</class>
+        <class>persistence.PostulanteJPA</class>
+        <class>persistence.EmpresaJPA</class>
+        <class>persistence.UsuarioJPA</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver" />
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:hsqldb:file:ServidorDB;shutdown=true" />
+            <property name="jakarta.persistence.jdbc.user" value="sa" />
+            <property name="jakarta.persistence.jdbc.password" value="" />
+            <property name="eclipselink.ddl-generation" value="create-tables" />
+            <property name="eclipselink.ddl-generation.output-mode" value="database" />
+        </properties>
+    </persistence-unit>
+</persistence>

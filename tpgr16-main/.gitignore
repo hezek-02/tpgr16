@@ -1,0 +1,9 @@
+*/bin
+*.class
+*.metada
+*.settings
+*.project
+*.classpath
+*.checkstyle
+ServidorWeb/.classpath
+/bin/

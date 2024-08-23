@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.main-container-oferta{
+	display: flex;
+}
+
+.form-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fff;
+	border-radius: 10px 10px;
+	padding: 30px;
+	box-shadow: 1px 4px 10px rgba(0,0,0,0.1);
+}
+
+.contenido {
+    display: none;
+}
+
+.btn-section{
+	display: flex;
+	gap:10px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-form{
+	margin: 10px;
+}
+
+
+#opcionesPaquete{
+	display: none;
+}
+
+.icono-imagen-paq{
+	width: 20px;
+	height: 20px;
+	margin-left: 20px;
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+	.generic-box{
+		width: 95%;
+	}
+}
